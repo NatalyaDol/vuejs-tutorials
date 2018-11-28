@@ -1,5 +1,8 @@
 var Vue = require('vue')
-import VueRouter from 'vue-router'
+// var VueRouter = require('vue-router') // BUG: Вызывает ошибку "TypeError: o is not a constructor"
+// Чтобы исправить данную ошибку необходимо использовать один из следующих вариантов подключения
+var VueRouter = require('vue-router').default
+// import VueRouter from 'vue-router'
 
 var Brands = require('./views/Brands.vue')
 var Contacts = require('./views/Contacts.vue')
